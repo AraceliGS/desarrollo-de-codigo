@@ -1,0 +1,22 @@
+/* Estilos generales */
+body {
+  margin: 8px 16px;
+}
+
+/* Estilos al contenedor del span donde se muestran las respuestas*/
+.answer-container {
+  display: flex;
+  align-items: center;
+  margin: 1em 2em;
+}
+
+/* Estilos al span donde se almacenan las respuestas */
+
+.answer-span {
+  border: 1px solid gray;
+  display: inline-block;
+  margin: 0 1em;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
