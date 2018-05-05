@@ -13,8 +13,8 @@ window.addEventListener('load', function() {
     let min = numbers[0];
     // Recorriendo el array
     for(var i = 0; i < numbers.length ; i++) {
-      debugger;
-      console.log(numbers[i]);
+      // debugger;
+      // console.log(numbers[i]);
       // Comparando
       if(numbers[i] > max) {
         secondMax = max;
@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
         min = min;
         max = max;
         secondMax = secondMax;
-        console.log(secondMax);
+        // console.log(secondMax);
       }
     }
     // Colocando los valores obtenidos en sus respectivos contenedores

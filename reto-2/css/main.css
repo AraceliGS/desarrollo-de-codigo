@@ -1,0 +1,23 @@
+/* Estilos generales */
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Estilos al contenedor general */
+.container {
+  margin: 0 16px;
+}
+
+/* Estilos al contenedor de la primera solución */
+.name {
+  border: 2px solid gray;
+  margin: 0 1em;
+  padding: 0 0.5em;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
