@@ -1,6 +1,55 @@
 /* Estilos generales */
 body {
-  margin: 8px 16px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+}
+
+h1 {
+  background-color: #7CCF3D;
+  color: white;
+  margin-bottom: 1.2em;
+  margin-top: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+button {
+  background-color: #7CCF3D;
+  border: 1px solid #7CCF3D;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+  outline: 0;
+  padding: 0.8em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+li {
+  color: green;
+  font-weight: 700;
+  list-style: none;
+}
+
+/* Efecto al botón */
+button:hover {
+  background-color: green;
+}
+
+/* Estilos al contenedor general */
+.container {
+  margin: 0 16px;
+}
+
+/* Estilos al contenedor de las respuestas */
+.answers {
+  margin-top: 1.5em;
 }
 
 /* Estilos al contenedor del span donde se muestran las respuestas*/
@@ -13,11 +62,13 @@ body {
 /* Estilos al span donde se almacenan las respuestas */
 
 .answer-span {
-  border: 1px solid gray;
+  border: 2px solid #7CCF3D;
+  color: green;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 1em;
+  padding: 0 0.5em;
   text-align: center;
   width: 30px;
   height: 30px;
