@@ -35,7 +35,6 @@ window.addEventListener('load', function() {
   function sortInAscendingOrder(array, index, minWord) {
     // Bucle para comparar que letra es menor
     for(var k = 0; k < array.length; k++) {
-      //debugger;
       if(minWord < array[k]) {
         array[index] = array[k];
         array[k] = minWord;
@@ -44,30 +43,30 @@ window.addEventListener('load', function() {
         minWord;
       }
      }
-     console.log(array);
-     //console.log(arr);
   }
   // Evento click para el botón OBTENER
   getLongestNameButton.addEventListener('click', function() {
     longestWord(['erik', 'leonardo', 'andres', 'gerardo', 'jan', 'renzo']);
   });
-  //
-
   // Evento click para el botón ORDENAR
   orderArrayList.addEventListener('click', function() {
     var arrayOfWords = ['erik', 'leonardo', 'andres', 'gerardo', 'jan', 'renzo'];
     var firstWords = [];
     var word;
-    var arr = [];
     // Bucle para obtener la primera letra de cada palabra
     for(var i = 0; i < arrayOfWords.length; i++) {
-      debugger;
+      //debugger;
       word = arrayOfWords[i];
-      firstWords[i] = word[0];
-      var minWord = word[0];
-      //console.log(firstWords);
+      var minWord = word;
+      firstWords[i] = minWord;
       sortInAscendingOrder(firstWords, i, minWord);
     }
     console.log(firstWords);
+    for(var i = 0; i < firstWords.length; i++) {
+      debugger;
+      var li = `<li class="item" id=${i}>${firstWords[i]}</li>`;
+      namesList.innerHTML += li;
+    }
+    console.log(namesList);
   });
 });
