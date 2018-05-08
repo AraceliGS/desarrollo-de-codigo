@@ -36,7 +36,7 @@ Desarrollar el código para cada uno de los siguientes casos:
 
 Dado el siguiente arreglo de cadenas:
 
-```Arreglo = [45, 75, 200, 256, 1, 27]```
+```Arreglo de Cadenas =  [“erik”, ”leonardo”, ”andres”, “gerardo”, ”jan”, “renzo”]```
 
 Desarrollar el código para cada uno de los siguientes casos:
 
