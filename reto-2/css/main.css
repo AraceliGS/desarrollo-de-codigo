@@ -1,10 +1,47 @@
 /* Estilos generales */
 body {
   margin: 0;
+  font-size: 1.1em;
 }
 
 h1 {
+  background-color: #7D3CCB;
+  color: white;
+  margin-bottom: 1.2em;
+  margin-top: 0;
+  padding: 0.5em;
   text-align: center;
+}
+
+button {
+  background-color: #7D3CCB;
+  border: 1px solid #7D3CCB;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 700;
+  outline: 0;
+  padding: 0.8em;
+}
+
+button:hover {
+  background-color: #7022B0;
+  cursor: pointer;
+}
+
+/* Estilos a la lista con los elementos del arreglo no ordenados */
+
+.array-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+.array-elements {
+  color: #7022B0;
+  font-size: 1.2em;
+  font-weight: 700;
+  list-style: none;
 }
 
 /* Estilos al contenedor general */
@@ -12,7 +49,12 @@ h1 {
   margin: 0 16px;
 }
 
-/* Estilos al contenedor de la primera solución */
+/* Estilos al contenedor del span que contendrá la respuesta primera solución */
+.answers {
+  margin: 1em 0;
+}
+
+/* Estilos al contenedor que contendrá la respuesta primera solución */
 .name {
   border: 2px solid gray;
   margin: 0 1em;

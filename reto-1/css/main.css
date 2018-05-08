@@ -19,8 +19,8 @@ button {
   border: 1px solid #7CCF3D;
   border-radius: 5px;
   color: white;
-  font-weight: 700;
   font-size: 0.9em;
+  font-weight: 700;
   outline: 0;
   padding: 0.8em;
 }
@@ -39,7 +39,8 @@ li {
 
 /* Efecto al botón */
 button:hover {
-  background-color: green;
+  background-color: #5BA026;
+  cursor: pointer;
 }
 
 /* Estilos al contenedor general */

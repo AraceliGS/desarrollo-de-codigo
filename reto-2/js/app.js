@@ -17,7 +17,6 @@ window.addEventListener('load', function() {
          wordLength = wordLength + 1;
       };
       namesLength[i] = wordLength;
-      //console.log(namesLength);
     };
     // Hallando la palabra con más caracteres
     var maxLengthIndex = 0;
@@ -28,16 +27,15 @@ window.addEventListener('load', function() {
         maxLengthIndex;
       }
     }
-    console.log(names[maxLengthIndex]);
     longestNameSpan.textContent = names[maxLengthIndex];
   }
   // Función para ordenar el arreglo firstWords de forma ascendente
   function sortInAscendingOrder(array, index, minWord) {
     // Bucle para comparar que letra es menor
-    for(var k = 0; k < array.length; k++) {
-      if(minWord < array[k]) {
-        array[index] = array[k];
-        array[k] = minWord;
+    for(var i = 0; i < array.length; i++) {
+      if(minWord < array[i]) {
+        array[index] = array[i];
+        array[i] = minWord;
         minWord = array[index];
       } else {
         minWord;
@@ -55,18 +53,14 @@ window.addEventListener('load', function() {
     var word;
     // Bucle para obtener la primera letra de cada palabra
     for(var i = 0; i < arrayOfWords.length; i++) {
-      //debugger;
       word = arrayOfWords[i];
       var minWord = word;
       firstWords[i] = minWord;
       sortInAscendingOrder(firstWords, i, minWord);
     }
-    console.log(firstWords);
     for(var i = 0; i < firstWords.length; i++) {
-      debugger;
       var li = `<li class="item" id=${i}>${firstWords[i]}</li>`;
       namesList.innerHTML += li;
     }
-    console.log(namesList);
   });
 });
