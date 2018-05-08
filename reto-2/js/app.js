@@ -62,5 +62,6 @@ window.addEventListener('load', function() {
       var li = `<li class="item" id=${i}>${firstWords[i]}</li>`;
       namesList.innerHTML += li;
     }
+    orderArrayList.disabled = true;
   });
 });

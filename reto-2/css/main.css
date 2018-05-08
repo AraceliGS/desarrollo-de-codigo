@@ -1,12 +1,14 @@
 /* Estilos generales */
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
 }
 
 h1 {
   background-color: #7D3CCB;
   color: white;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 1.2em;
   margin-top: 0;
   padding: 0.5em;
@@ -34,7 +36,7 @@ button:hover {
 .array-list {
   display: flex;
   justify-content: space-around;
-  margin: 2em;
+  margin: 2.3em;
 }
 
 .array-elements {
@@ -49,18 +51,32 @@ button:hover {
   margin: 0 16px;
 }
 
-/* Estilos al contenedor del span que contendrá la respuesta primera solución */
+/* Estilos al contenedor del span que contendrá la primera solución */
 .answers {
   margin: 1em 0;
 }
 
-/* Estilos al contenedor que contendrá la respuesta primera solución */
+/* Estilos al contenedor que contendrá la primera solución */
 .name {
   border: 2px solid gray;
+  color: #7D3CCB;
+  font-weight: 700;
   margin: 0 1em;
   padding: 0 0.5em;
   text-align: center;
   text-transform: capitalize;
   width: 30px;
   height: 30px;
+}
+
+/* Estilos al contenedor del botón ORDENAR y de la lista relacionados al segundo problema del reto */
+.get-solution-2-container {
+  margin: 1.5em 0;
+}
+
+/* Estilos aplicados a la lista con los nombres ya ordernados alfabéticamente */
+.ordered-list {
+  color: #7022B0;
+  font-style: italic;
+  list-style: square;
 }
